@@ -1,0 +1,132 @@
+.container {
+  box-sizing: border-box;
+  border: 2px solid grey;
+  width: 50%;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  background: rgb(251, 226, 217);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h1,
+h2 {
+  color: #7b656b;
+  font-family: poppins;
+}
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 10%;
+  line-height: 65%;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 35%;
+  margin-top: 3%;
+  text-transform: capitalize;
+}
+.week-input {
+  font-size: medium;
+  padding-left: 20%;
+  padding-top: 0;
+  color: #7b656b;
+  font-family: poppins;
+}
+
+hr {
+  width: 55%;
+  color: rgb(245, 167, 65);
+  border-top: 5px solid;
+  opacity: 100%;
+}
+#oval {
+  width: 250px;
+  height: 67px;
+  background: transparent;
+  border-radius: 100px / 78px;
+  border-color: rgb(245, 167, 65);
+  border-style: solid;
+  display: block;
+  margin-left: 50%;
+  top: -70px;
+}
+
+.relative {
+  position: relative;
+}
+
+input {
+  border: none;
+  border-bottom: solid;
+  width: 40%;
+  border-color: grey;
+}
+button {
+  border-radius: 100px / 90px;
+  width: 50px;
+  background-color: rgb(251, 226, 217);
+  border: none;
+  color: grey;
+  font-family: poppins;
+  margin-left: 10%;
+}
+
+a {
+  color: grey;
+  font-size: 26px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+#tempUnit {
+  font-size: 58px;
+  font-weight: bolder;
+  margin-left: 48%;
+  color: grey;
+}
+.unit {
+  position: relative;
+  top: -72px;
+  font-family: poppins;
+  color: grey;
+  font-weight: 100px;
+  margin-left: 58%;
+  font-size: 25px;
+}
+
+.weekday {
+  font-weight: 500;
+  width: 25%;
+}
+
+.table {
+  width: 90%;
+  margin-left: 25%;
+}
+
+.semicircle {
+  background-color: orange;
+  height: 250px;
+  width: 125px;
+  border-radius: 0px 125px 125px 0px;
+  margin-left: -1.6%;
+}
+.cone {
+  background-color: transparent;
+  border: solid rgb(239, 110, 64) 2px;
+  height: 250px;
+  width: 100px;
+  border-radius: 125px 125px 125px 125px;
+  margin-left: 87.5%;
+  margin-top: -25%;
+  border-right: none;
+}
