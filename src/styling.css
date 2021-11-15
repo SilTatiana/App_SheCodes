@@ -80,13 +80,6 @@ button {
   margin-left: 10%;
 }
 
-a {
-  color: grey;
-  font-size: 26px;
-  font-weight: 300;
-  text-decoration: none;
-}
-
 #tempUnit {
   font-size: 58px;
   font-weight: bolder;
@@ -129,4 +122,12 @@ a {
   margin-left: 87.5%;
   margin-top: -25%;
   border-right: none;
+}
+a {
+  margin-left: 45%;
+  font-size: 15px;
+  color: #7b656b;
+  text-decoration: none;
+  font-family: poppins;
+  font-style: italic;
 }
