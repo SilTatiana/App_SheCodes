@@ -64,3 +64,4 @@ let form = document.querySelector("#city-form");
 form.addEventListener("submit", findCity);
 
 let currentLocationButton = document.querySelector("#current");
+currentLocationButton.addEventListener("click", getCurrentLocation);
