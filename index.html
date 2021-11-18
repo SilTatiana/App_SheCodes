@@ -23,8 +23,8 @@
     />
     
   </head>
-  <div class="container">
-    <body>
+  <body>
+      <div class="container">
       <br/>
       <button id= "current">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -42,21 +42,28 @@
       
         <div class="week-input">Tuesday, 13:52</div>
       </div>
+
+      <form id= "city-form">
+      <input  type="text" placeholder="Enter a city" id="city-input" autocomplete="off" autofocus="on" />
+     
+      </form>
+
+      <img src="" alt="Clear" id="icon" class="float-left" />
          
-        <div id="oval"class="relative">
+      <div id="oval"class="relative">
         <h2 id="tempDescription"></h2>
          </div>
-        
-      <form id= "city-form">
-            <input  type="text" placeholder="Enter a city" id="city-input" autocomplete="off" autofocus="on" />
-           
-      </form>
-       
-      <br/> 
-        <br/>
+      
           <hr/>
-          <span id="tempUnit"></span>
-          <span class="unit">°C</span>
+          <span id="tempUnit"> 
+            <a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span></span>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+              </div>
           
         <div class="cone"></div>
         
