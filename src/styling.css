@@ -1,3 +1,7 @@
+body {
+  font-family: poppins;
+}
+
 .container {
   box-sizing: border-box;
   border: 2px solid grey;
@@ -15,9 +19,11 @@
 }
 
 h1,
-h2 {
+h2,
+.week-input,
+a,
+li {
   color: #7b656b;
-  font-family: poppins;
 }
 h1 {
   font-weight: 400;
@@ -38,8 +44,6 @@ h2 {
   font-size: medium;
   padding-left: 20%;
   padding-top: 0;
-  color: #7b656b;
-  font-family: poppins;
 }
 
 hr {
@@ -76,24 +80,26 @@ button {
   background-color: rgb(251, 226, 217);
   border: none;
   color: grey;
-  font-family: poppins;
+
   margin-left: 10%;
 }
 
 #tempUnit {
-  font-size: 58px;
-  font-weight: bolder;
-  margin-left: 48%;
+  font-size: 65px;
+  font-weight: normal;
   color: grey;
+  margin-left: 20%;
 }
-.unit {
-  position: relative;
-  top: -72px;
-  font-family: poppins;
+
+li {
+  list-style: none;
+  font-size: 17px;
+}
+.units {
   color: grey;
   font-weight: 100px;
   margin-left: 58%;
-  font-size: 25px;
+  font-size: 80px;
 }
 
 .weekday {
@@ -126,8 +132,6 @@ button {
 a {
   margin-left: 45%;
   font-size: 15px;
-  color: #7b656b;
   text-decoration: none;
-  font-family: poppins;
   font-style: italic;
 }
