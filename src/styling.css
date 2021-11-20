@@ -5,6 +5,7 @@ body {
 .container {
   box-sizing: border-box;
   border: 2px solid grey;
+  border-radius: 1%;
   max-width: 1000px;
   max-height: 700px;
   margin: 40px auto;
@@ -34,13 +35,14 @@ h1 {
   padding-left: 10%;
   line-height: 65%;
   text-transform: capitalize;
+  text-align: center;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 400;
   text-transform: capitalize;
-  text-align:center;
+  text-align: center;
 }
 .date {
   font-size: medium;

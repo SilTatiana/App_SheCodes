@@ -56,6 +56,8 @@ function searchCity(event) {
   search(cityElementInput.value);
 }
 
+search("Porto");
+
 function showFahrenheit(event) {
   event.preventDefault();
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
@@ -93,5 +95,3 @@ celsiusElement.addEventListener("click", showCelsius);
 
 let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-search("Porto");
