@@ -13,7 +13,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
     <link rel="stylesheet" href="src/styling.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,113 +20,47 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
       <div class="container">
-      <br/>
-      <button id= "current">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-         <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-         <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-       </svg>
-     </button>
-     
+        <button id= "current">
+           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+             <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+        </button>
       <div id="circle">
-        <br/>
-        <br/>
-       
-      <h1 id="city"></h1> 
-        <br/> 
-      
-        <div class="week-input">Tuesday, 13:52</div>
-      </div>
-
-      <form id= "city-form">
-      <input  type="text" placeholder="Enter a city" id="city-input" autocomplete="off" autofocus="on" />
-     
-      </form>
-
-      <img src="" alt="Clear" id="icon" class="float-left" />
-         
-      <div id="oval"class="relative">
-        <h2 id="tempDescription"></h2>
-         </div>
-      
-          <hr/>
-
-          <div class="col-6">
-            <div class="float-left">
-          <span id="tempUnit"> </span> <a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a>
+        <h1 id="city"></h1>
+          <br/> 
+           <div id="date"></div>
             </div>
-              </div>
-          <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
+        <form id= "city-form">
+          <input  type="search" placeholder="Enter a city" id="city-input" autocomplete="off" autofocus="on"  />
+        </form>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon" class="float-center" />
+          <div id="oval"class="relative"> </div>
+           <h2 id="tempDescription"></h2>
+           
+        <hr/>
+          <div id="tempUnit"></div>
+            <span class="units"
+              ><a href="#" id="celsius">C°</a>
+                <a href="#" id="fahrenheit">°F</a></span>
+                  
+         <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
-            </div>
-          
-            
-            
-        <div class="cone"></div>
-        
-        <table class="table table-borderless table-md">
-          <tbody>
-            
-              <tr>
-                    <td class="weekday">Saturday
-                      
-                    </td>
-                    <td>🌧 </td>
-                    <td>19° 11°</td>
-                 </tr>
-                 
-                  
-                 <tr>
-                    <td class="weekday">Sunday</td>
-                    <td> 🌦 </td>
-                    <td>21° 25°</td>
-                 </tr>
-                
-                 
-                 <tr>
-                    <td class="weekday">Monday</td>
-                    <td>⛅️</td>
-                    <td>23° 17°</td>
-                </tr>
-                
-                <tr>
-                    <td class="weekday">Tuesday</td>
-                    <td>🌤</td>
-                    <td>28° 21°</td>
-                 </tr>
-                 
-                  
-                 <tr>
-                    <td class="weekday">Wednesday</td>
-                    <td>🌤</td>
-                    <td>27° 20°</td>
-                </tr>
-               
-                 
-                 <tr>
-                    <td class="weekday">Thursday</td>
-                    <td>🌥</td>
-                    <td>24° 19°</td>
-                </tr>
-               
-            </tbody>
-        </table>  
+                 </ul>
+                   </div>
+         <div class="cone"></div>
               <div class="semicircle"></div>
           </div>
         </div>
       </div>
-      <br/>
-
+    </div>
+  <br/>
    <a href="https://github.com/SilTatiana/App_SheCodes" target="_blank" class="github"> Code @Github</a>
     </body>
-
-     <script  src="src/script.js"></script> 
-  </div>
+      <script  src="src/script.js"></script> 
 </html> 

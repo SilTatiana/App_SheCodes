@@ -5,9 +5,10 @@ body {
 .container {
   box-sizing: border-box;
   border: 2px solid grey;
-  width: 50%;
+  max-width: 1000px;
+  max-height: 700px;
+  margin: 40px auto;
 }
-
 #circle {
   width: 200px;
   height: 200px;
@@ -15,14 +16,16 @@ body {
   border-radius: 50%;
   display: block;
   margin: auto;
-  margin-top: 50px;
 }
 
 h1,
 h2,
-.week-input,
-a,
-li {
+#date,
+.github,
+li,
+#city,
+#celsius,
+#fahrenheit {
   color: #7b656b;
 }
 h1 {
@@ -32,15 +35,14 @@ h1 {
   line-height: 65%;
   text-transform: capitalize;
 }
+
 h2 {
   font-size: 24px;
   font-weight: 400;
-  text-align: justify;
-  margin-left: 35%;
-  margin-top: 3%;
   text-transform: capitalize;
+  text-align:center;
 }
-.week-input {
+.date {
   font-size: medium;
   padding-left: 20%;
   padding-top: 0;
@@ -61,7 +63,7 @@ hr {
   border-style: solid;
   display: block;
   margin-left: 50%;
-  top: -70px;
+  top: -90px;
 }
 
 .relative {
@@ -70,9 +72,11 @@ hr {
 
 input {
   border: none;
-  border-bottom: solid;
-  width: 40%;
-  border-color: grey;
+  border-radius: 6px;
+  width: 30%;
+  margin-left: 52%;
+  padding: 10px 10px;
+  transition: none;
 }
 button {
   border-radius: 100px / 90px;
@@ -80,7 +84,7 @@ button {
   background-color: rgb(251, 226, 217);
   border: none;
   color: grey;
-
+  margin-top: 3%;
   margin-left: 10%;
 }
 
@@ -91,15 +95,17 @@ button {
   margin-left: 20%;
 }
 
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 30%;
+  cursor: default;
+}
+
 li {
   list-style: none;
   font-size: 17px;
-}
-.units {
-  color: grey;
-  font-weight: 100px;
-  margin-left: 58%;
-  font-size: 80px;
 }
 
 .weekday {
@@ -107,17 +113,13 @@ li {
   width: 25%;
 }
 
-.table {
-  width: 90%;
-  margin-left: 25%;
-}
-
 .semicircle {
   background-color: orange;
   height: 250px;
   width: 125px;
   border-radius: 0px 125px 125px 0px;
-  margin-left: -1.6%;
+  margin-left: -1.4%;
+  margin-top: -18%;
 }
 .cone {
   background-color: transparent;
@@ -125,11 +127,11 @@ li {
   height: 250px;
   width: 100px;
   border-radius: 125px 125px 125px 125px;
-  margin-left: 87.5%;
+  margin-left: 91%;
   margin-top: -25%;
   border-right: none;
 }
-a {
+.github {
   margin-left: 45%;
   font-size: 15px;
   text-decoration: none;
