@@ -4,19 +4,29 @@ body {
 
 .container {
   box-sizing: border-box;
-  border: 2px solid grey;
+  border: 2px solid lightgrey;
   border-radius: 1%;
-  max-width: 1000px;
-  max-height: 700px;
+  max-width: 950px;
+  height: 650px;
   margin: 40px auto;
 }
+button {
+  border-radius: 100px / 90px;
+  width: 50px;
+  background-color: rgb(251, 226, 217);
+  border: none;
+  color: grey;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
 #circle {
   width: 200px;
   height: 200px;
   background: rgb(251, 226, 217);
   border-radius: 50%;
   display: block;
-  margin: auto;
+  margin: 0% auto;
 }
 
 h1,
@@ -32,30 +42,32 @@ li,
 h1 {
   font-weight: 400;
   font-size: 40px;
-  padding-left: 10%;
+  padding-top: 10%;
   line-height: 65%;
   text-transform: capitalize;
   text-align: center;
+  margin-top: 0%;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: capitalize;
+#date {
+  font-size: medium;
+  text-align: center;
+  padding-top: -7%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+input {
+  border: none;
+  border-radius: 6px;
+  width: 30%;
+  display: block;
+  margin: 5% auto;
+  padding: 10px 10px;
+  transition: none;
+  background-color: transparent;
   text-align: center;
 }
-.date {
-  font-size: medium;
-  padding-left: 20%;
-  padding-top: 0;
-}
 
-hr {
-  width: 55%;
-  color: rgb(245, 167, 65);
-  border-top: 5px solid;
-  opacity: 100%;
-}
 #oval {
   width: 250px;
   height: 67px;
@@ -64,45 +76,49 @@ hr {
   border-color: rgb(245, 167, 65);
   border-style: solid;
   display: block;
-  margin-left: 50%;
-  top: -90px;
-}
-
-.relative {
+  margin: -11% auto;
   position: relative;
 }
-
-input {
-  border: none;
-  border-radius: 6px;
-  width: 30%;
-  margin-left: 52%;
-  padding: 10px 10px;
-  transition: none;
+#icon {
+  margin-top: -18%;
+  padding: auto;
 }
-button {
-  border-radius: 100px / 90px;
-  width: 50px;
-  background-color: rgb(251, 226, 217);
-  border: none;
-  color: grey;
-  margin-top: 3%;
-  margin-left: 10%;
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 35px;
+}
+
+hr {
+  width: 55%;
+  color: rgb(245, 167, 65);
+  border-top: 5px solid;
+  opacity: 100%;
+  margin-top: 5%;
 }
 
 #tempUnit {
-  font-size: 65px;
+  font-size: 90px;
   font-weight: normal;
   color: grey;
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-top: -4%;
+  padding: auto;
 }
 
-#celsius,
+#celsius {
+  text-decoration: none;
+  font-size: 17px;
+  cursor: default;
+  margin-left: 20%;
+}
 #fahrenheit {
   text-decoration: none;
   font-size: 17px;
-  margin-left: 30%;
   cursor: default;
+  margin-left: 0%;
 }
 
 li {
@@ -110,18 +126,25 @@ li {
   font-size: 17px;
 }
 
-.weekday {
-  font-weight: 500;
-  width: 25%;
+.details {
+  color: lightgrey;
+  border: 2px;
+  margin-top: 16%;
+  margin-bottom: 0%;
+}
+.col-6 {
+  margin-left: 15%;
+  margin-top: -14%;
+  font-style: italic;
+  font-family: poppins;
 }
 
 .semicircle {
   background-color: orange;
-  height: 250px;
-  width: 125px;
+  height: 200px;
+  width: 115px;
   border-radius: 0px 125px 125px 0px;
-  margin-left: -1.4%;
-  margin-top: -18%;
+  margin-left: -1.2%;
 }
 .cone {
   background-color: transparent;
