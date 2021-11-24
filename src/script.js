@@ -20,33 +20,40 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-
+function formatWeekday(weekdate) {
+  let date = new Date(weekdate * 1000);
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  
+  let day = days[date.getDay()];
+  return day;
+}
 function displayforecast(response) {
-
-  console.log(response.data);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
   
   <div class="col-2">
-  <div class="weather-forecast-date">${day}</div>
+  <div class="weather-forecast-date">${formatWeekday(forecastDay.dt)}</div>
   <img
-  src="https://openweathermap.org/img/wn/02d@2x.png"
+  src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
   alt=""
   width="65"
   />
   <div class="weather-forecast-temperature">
-  <span class="weather-forecast-max">20°</span>
-  <span class="weather-forecast-min">15°</span>
+  <span class="weather-forecast-max">${Math.round(forecastDay.temp.max)}°</span>
+  <span class="weather-forecast-min">${Math.round(forecastDay.temp.min)}°</span>
   </div>
   </div>
   `;
-  });
+    } });
+
   forecastHTML = forecastHTML + `</div>`;
 
   forecastElement.innerHTML = forecastHTML;
@@ -55,9 +62,7 @@ function getForecast(coordinates) {
   let apiKey = `2ea1b4ac08d8a2f31dcf74c882f41bf5`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayforecast);
-
 }
-
 
 function loadTemperature(response) {
   let temperatureElement = document.querySelector("#tempUnit");
@@ -96,7 +101,6 @@ function searchCity(event) {
 }
 
 search("Porto");
-
 
 function showFahrenheit(event) {
   event.preventDefault();
