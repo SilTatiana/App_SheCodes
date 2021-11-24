@@ -29,21 +29,21 @@
                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg>
         </button>
-      <div id="circle">
-        <h1 id="city"></h1> 
-        <div id="date"></div>
-        <h2 id="tempDescription"></h2>
+        <div id="circle">
+          <h1 id="city"></h1> 
+            <div id="date"></div>
+              <h2 id="tempDescription"></h2>
         <hr/>
-        </div>
+      </div>
         <div class="units"
-        ><a href="#" id="celsius">C°|
-          <a href="#" id="fahrenheit">°F</a>
+          ><a href="#" id="celsius">C°|
+            <a href="#" id="fahrenheit">°F</a>
         </div>
         <div id="tempUnit"></div>
-        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon"  />
+          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon"  />
    
-         <div class="col-6">
-         <ul>
+          <div class="col-6">
+        <ul>
          <hr class="details"/>
           <li>Humidity: <span id="humidity"></span>%</li>
              <li>Wind: <span id="wind"></span> km/h</li>
@@ -52,12 +52,27 @@
                  <div class="cone"></div>
         <form id= "city-form">
           <input  type="search" placeholder="Enter a city" id="city-input" autocomplete="off" autofocus="on" />
-           <div id="oval"> </div>
+            <div id="oval"> </div>
         </form>
-              <div class="semicircle"></div>
+        <div class="semicircle">
+        </div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img src="https://openweathermap.org/img/wn/02d@2x.png" 
+              alt="" 
+              width="65"/>
+              <div class="weather-forecast-temperature">
+              <span class="weather-forecast-max">20°</span>
+              <span class="weather-forecast-min">15°</span> 
+                      </div>
+                  </div>
+                </div>
+              </div>        
+            </div>
           </div>
         </div>
-      </div>
     </div>
    <a href="https://github.com/SilTatiana/App_SheCodes" target="_blank" class="github"> Code @Github</a>
     </body>
