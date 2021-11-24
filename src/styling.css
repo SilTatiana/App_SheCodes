@@ -57,18 +57,6 @@ h1 {
   margin-top: 5%;
 }
 input {
-  border: none;
-  border-radius: 6px;
-  width: 30%;
-  display: block;
-  margin: -4% auto;
-  padding: 10px 10px;
-  transition: none;
-  background-color: transparent;
-  text-align: center;
-}
-
-#oval {
   width: 250px;
   height: 67px;
   background: transparent;
@@ -78,7 +66,11 @@ input {
   display: block;
   margin: -6% auto;
   position: relative;
+  transition: none;
+  background-color: transparent;
+  text-align: center;
 }
+
 #icon {
   margin-top: -18%;
   padding: auto;
@@ -157,24 +149,20 @@ li {
   margin-top: -25%;
   border-right: none;
 }
-.weather-forecast{
+.weather-forecast {
   margin-left: 13%;
   margin-top: -15%;
   text-align: center;
-  
 }
 .weather-forecast-date,
-.weather-forecast-max{
+.weather-forecast-max {
   font-size: 15px;
-  color:#7b656b;
+  color: #7b656b;
   font-weight: 600;
-  
 }
-.weather-forecast-min{
-  color:#7b656b;
-  
+.weather-forecast-min {
+  color: #7b656b;
 }
-
 
 .github {
   margin-left: 45%;
@@ -182,4 +170,3 @@ li {
   text-decoration: none;
   font-style: italic;
 }
-
