@@ -54,7 +54,7 @@ h1 {
   text-align: center;
   padding-top: -7%;
   margin-left: 20%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 input {
   width: 250px;
@@ -74,13 +74,7 @@ input {
 #icon {
   margin-top: -18%;
   padding: auto;
-}
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: capitalize;
-  text-align: center;
-  margin-top: 35px;
+  margin-left: 18%;
 }
 
 hr {
@@ -88,7 +82,7 @@ hr {
   color: rgb(245, 167, 65);
   border-top: 5px solid;
   opacity: 100%;
-  margin-top: 5%;
+  margin-top: 18%;
 }
 
 #tempUnit {
@@ -115,7 +109,8 @@ hr {
 
 li {
   list-style: none;
-  font-size: 17px;
+  font-size: 15px;
+  text-transform: capitalize;
 }
 
 .details {
