@@ -21,6 +21,35 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayforecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    
+    forecastHTML = forecastHTML + `
+  
+  <div class="col-2">
+  <div class="weather-forecast-date">${day}</div>
+  <img
+  src="https://openweathermap.org/img/wn/02d@2x.png"
+  alt=""
+  width="65"
+  />
+  <div class="weather-forecast-temperature">
+  <span class="weather-forecast-max">20°</span>
+  <span class="weather-forecast-min">15°</span>
+  </div>
+  </div>
+  `;
+  });
+    forecastHTML = forecastHTML + `</div>`;
+  
+    forecastElement.innerHTML = forecastHTML;
+  }
+
+
 function loadTemperature(response) {
   let temperatureElement = document.querySelector("#tempUnit");
   let cityElement = document.querySelector("#city");
@@ -29,6 +58,7 @@ function loadTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+
 
   celsiusTemperature = response.data.main.temp;
 
@@ -57,6 +87,7 @@ function searchCity(event) {
 }
 
 search("Porto");
+displayforecast();
 
 function showFahrenheit(event) {
   event.preventDefault();

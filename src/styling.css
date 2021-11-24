@@ -165,9 +165,10 @@ li {
 }
 .weather-forecast-date,
 .weather-forecast-max{
-  font-size: 18px;
+  font-size: 15px;
   color:#7b656b;
   font-weight: 600;
+  
 }
 .weather-forecast-min{
   color:#7b656b;
