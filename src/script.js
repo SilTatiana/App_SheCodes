@@ -27,8 +27,9 @@ function displayforecast() {
   let forecastHTML = `<div class="row">`;
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   days.forEach(function (day) {
-    
-    forecastHTML = forecastHTML + `
+    forecastHTML =
+      forecastHTML +
+      `
   
   <div class="col-2">
   <div class="weather-forecast-date">${day}</div>
@@ -44,11 +45,10 @@ function displayforecast() {
   </div>
   `;
   });
-    forecastHTML = forecastHTML + `</div>`;
-  
-    forecastElement.innerHTML = forecastHTML;
-  }
+  forecastHTML = forecastHTML + `</div>`;
 
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function loadTemperature(response) {
   let temperatureElement = document.querySelector("#tempUnit");
@@ -58,7 +58,6 @@ function loadTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-
 
   celsiusTemperature = response.data.main.temp;
 
