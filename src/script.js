@@ -21,7 +21,9 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayforecast() {
+function displayforecast(response) {
+
+  console.log(response.data);
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -49,6 +51,13 @@ function displayforecast() {
 
   forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  let apiKey = `2ea1b4ac08d8a2f31dcf74c882f41bf5`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayforecast);
+
+}
+
 
 function loadTemperature(response) {
   let temperatureElement = document.querySelector("#tempUnit");
@@ -71,6 +80,7 @@ function loadTemperature(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -86,7 +96,7 @@ function searchCity(event) {
 }
 
 search("Porto");
-displayforecast();
+
 
 function showFahrenheit(event) {
   event.preventDefault();
@@ -103,7 +113,7 @@ function showCelsius(event) {
 
 function searchLocation(position) {
   let apiKey = "190f083641e831566041879e27b9b225";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.latitude}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(url).then(loadTemperature);
 }
 
