@@ -1,54 +1,57 @@
- <table class="table table-borderless table-md">
-   <tbody>
-       <tr>
-             <td class="weekday">Saturday
-               
-             </td>
-             <td>🌧 </td>
-             <td>19° 11°</td>
-          </tr>
-          
-           
-          <tr>
-             <td class="weekday">Sunday</td>
-             <td> 🌦 </td>
-             <td>21° 25°</td>
-          </tr>
-         
-          
-          <tr>
-             <td class="weekday">Monday</td>
-             <td>⛅️</td>
-             <td>23° 17°</td>
-         </tr>
-         
-         <tr>
-             <td class="weekday">Tuesday</td>
-             <td>🌤</td>
-             <td>28° 21°</td>
-          </tr>
-          
-           
-          <tr>
-             <td class="weekday">Wednesday</td>
-             <td>🌤</td>
-             <td>27° 20°</td>
-         </tr>
-        
-          
-          <tr>
-             <td class="weekday">Thursday</td>
-             <td>🌥</td>
-             <td>24° 19°</td>
-         </tr>
-        
-     </tbody>
- </table>  
 
 
- .table {
-  width: 90%;
-  margin-left: 25%;
 
- 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
