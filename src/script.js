@@ -23,7 +23,7 @@ function formatDate(timestamp) {
 function formatWeekday(weekdate) {
   let date = new Date(weekdate * 1000);
   let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
-  
+
   let day = days[date.getDay()];
   return day;
 }
@@ -52,7 +52,8 @@ function displayforecast(response) {
   </div>
   </div>
   `;
-    } });
+    }
+  });
 
   forecastHTML = forecastHTML + `</div>`;
 
@@ -115,6 +116,8 @@ function showCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+let celsiusTemperature = null;
+
 function searchLocation(position) {
   let apiKey = "190f083641e831566041879e27b9b225";
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -125,8 +128,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-
-let celsiusTemperature = null;
 
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", searchCity);
